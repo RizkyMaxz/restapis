@@ -29,6 +29,7 @@
     "querystring": "^0.2.1",
     "uuid": "^13.0.0",
     "ws": "^8.18.3",
+    "@fongsidev/scraper": "^1.0.0", 
     "yt-search": "^2.12.1"
   }
 }
