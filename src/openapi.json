@@ -1,0 +1,2112 @@
+{
+    "openapi": "1.0.0",
+    "info": {
+        "title": "RizkyMaxz",
+        "author": "sahabat nabi",
+        "version": "v1.0.0",
+        "description": "Simple and easy to use API."
+    },
+    "servers": [
+        {
+            "url": "/"
+        }
+    ],
+    "tags": [
+        {
+            "name": "AI"
+        },
+        {
+            "name": "Anime"
+        },
+        {
+            "name": "Downloader"
+        },
+        {
+            "name": "Image"
+        },
+        {
+            "name": "News"
+        },
+        {
+            "name": "AI"
+        },
+        {
+            "name": "Anime"
+        },
+        {
+            "name": "Downloader"
+        },
+        {
+            "name": "Image"
+        },
+        {
+            "name": "ImageCreator"
+        },
+        {
+            "name": "News"
+        },
+        {
+            "name": "OrderKuota"
+        },
+        {
+            "name": "Random"
+        },
+        {
+            "name": "Search"
+        },
+        {
+            "name": "Stalk"
+        },
+        {
+            "name": "Tools"
+        }
+    ],
+    "paths": {
+        "/ai/copilot": {
+            "get": {
+                "summary": "Copilot API",
+                "description": "Mengambil data dari copilot API.",
+                "tags": [
+                    "AI"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk copilot",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/ai/venice": {
+            "get": {
+                "summary": "Venice API",
+                "description": "Mengambil data dari venice API.",
+                "tags": [
+                    "AI"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk venice",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/anime/waifu": {
+            "get": {
+                "summary": "Waifu",
+                "description": "Mengambil gambar waifu secara acak dari API waifu.pics.",
+                "tags": [
+                    "Anime"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mengambil gambar waifu",
+                        "content": {
+                            "image/png": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary",
+                                    "example": "Binary image data"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": false
+                                        },
+                                        "error": {
+                                            "type": "string",
+                                            "example": "Gagal mengambil waifu."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/download/capcut": {
+            "get": {
+                "summary": "Capcut API",
+                "description": "Mengambil data dari capcut API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk capcut",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/pinterest": {
+            "get": {
+                "summary": "Pinterest API",
+                "description": "Mengambil data dari pinterest API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk pinterest",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/tiktok": {
+            "get": {
+                "summary": "Tiktok API",
+                "description": "Mengambil data dari tiktok API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk tiktok",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/image/bluearchive": {
+            "get": {
+                "summary": "Blue Archive",
+                "description": "Blue Archive Random Images",
+                "tags": [
+                    "Image"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Respon berhasil",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "status": {
+                                            "type": "boolean",
+                                            "example": true
+                                        },
+                                        "images": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string",
+                                                "format": "uri"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/image/loli": {
+            "get": {
+                "summary": "Loli API",
+                "description": "Mengambil data dari loli API.",
+                "tags": [
+                    "Image"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk loli",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/image/mpls": {
+            "get": {
+                "summary": "Mpls Generator",
+                "description": "Membuat Twibbon dari foto user dan frame MPLS",
+                "tags": [
+                    "Image"
+                ],
+                "parameters": [
+                    {
+                        "name": "url",
+                        "in": "query",
+                        "required": true,
+                        "description": "URL foto user",
+                        "schema": {
+                            "type": "string",
+                            "format": "uri"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Respon berhasil, mengembalikan image PNG",
+                        "content": {
+                            "image/png": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing ?url= parameter"
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/image/papayang": {
+            "get": {
+                "summary": "Papayang API",
+                "description": "Mengambil data dari papayang API.",
+                "tags": [
+                    "Image"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk papayang",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/image/wallpaper": {
+            "get": {
+                "summary": "Wallpaper API",
+                "description": "Mengambil data dari wallpaper API.",
+                "tags": [
+                    "Image"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk wallpaper",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/news/detik": {
+            "get": {
+                "summary": "Detik API",
+                "description": "Mengambil data dari detik API.",
+                "tags": [
+                    "News"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk detik",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/news/kontan": {
+            "get": {
+                "summary": "Kontan API",
+                "description": "Mengambil data dari kontan API.",
+                "tags": [
+                    "News"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk kontan",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/anime/Waifu": {
+            "get": {
+                "summary": "Waifu API",
+                "description": "Mengambil data dari Waifu API.",
+                "tags": [
+                    "Anime"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk Waifu",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/Instagram": {
+            "get": {
+                "summary": "Instagram API",
+                "description": "Mengambil data dari Instagram API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk Instagram",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/aio": {
+            "get": {
+                "summary": "Aio API",
+                "description": "Mengambil data dari aio API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk aio",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/buddy": {
+            "get": {
+                "summary": "Buddy API",
+                "description": "Mengambil data dari buddy API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk buddy",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/facebook": {
+            "get": {
+                "summary": "Facebook API",
+                "description": "Mengambil data dari facebook API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk facebook",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/gdrive": {
+            "get": {
+                "summary": "Gdrive API",
+                "description": "Mengambil data dari gdrive API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk gdrive",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/snackvidio": {
+            "get": {
+                "summary": "Snackvidio API",
+                "description": "Mengambil data dari snackvidio API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk snackvidio",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/soundcloud": {
+            "get": {
+                "summary": "Soundcloud API",
+                "description": "Mengambil data dari soundcloud API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk soundcloud",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/spotify": {
+            "get": {
+                "summary": "Spotify API",
+                "description": "Mengambil data dari spotify API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk spotify",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/terabox": {
+            "get": {
+                "summary": "Terabox API",
+                "description": "Mengambil data dari terabox API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk terabox",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/twitter": {
+            "get": {
+                "summary": "Twitter API",
+                "description": "Mengambil data dari twitter API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk twitter",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/videy": {
+            "get": {
+                "summary": "Videy API",
+                "description": "Mengambil data dari videy API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk videy",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/xnxx": {
+            "get": {
+                "summary": "Xnxx API",
+                "description": "Mengambil data dari xnxx API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk xnxx",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/ytdl-v2": {
+            "get": {
+                "summary": "Ytdl-v2 API",
+                "description": "Mengambil data dari ytdl-v2 API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk ytdl-v2",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/ytdl": {
+            "get": {
+                "summary": "Ytdl API",
+                "description": "Mengambil data dari ytdl API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk ytdl",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/download/ytmp3": {
+            "get": {
+                "summary": "Ytmp3 API",
+                "description": "Mengambil data dari ytmp3 API.",
+                "tags": [
+                    "Downloader"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk ytmp3",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/image/image-bluearchive": {
+            "get": {
+                "summary": "Image-bluearchive API",
+                "description": "Mengambil data dari image-bluearchive API.",
+                "tags": [
+                    "Image"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk image-bluearchive",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/image/twibon": {
+            "get": {
+                "summary": "Twibon API",
+                "description": "Mengambil data dari twibon API.",
+                "tags": [
+                    "Image"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk twibon",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/imagecreator/brat": {
+            "get": {
+                "summary": "Brat API",
+                "description": "Mengambil data dari brat API.",
+                "tags": [
+                    "ImageCreator"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk brat",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/imagecreator/remini": {
+            "get": {
+                "summary": "Remini API",
+                "description": "Mengambil data dari remini API.",
+                "tags": [
+                    "ImageCreator"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk remini",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/orderkuota/orderkuota": {
+            "get": {
+                "summary": "Orderkuota API",
+                "description": "Mengambil data dari orderkuota API.",
+                "tags": [
+                    "OrderKuota"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk orderkuota",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/random/random-bluearchive": {
+            "get": {
+                "summary": "Random-bluearchive API",
+                "description": "Mengambil data dari random-bluearchive API.",
+                "tags": [
+                    "Random"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk random-bluearchive",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/random/random-nsfw": {
+            "get": {
+                "summary": "Random-nsfw API",
+                "description": "Mengambil data dari random-nsfw API.",
+                "tags": [
+                    "Random"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk random-nsfw",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/random/random-papayang": {
+            "get": {
+                "summary": "Random-papayang API",
+                "description": "Mengambil data dari random-papayang API.",
+                "tags": [
+                    "Random"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk random-papayang",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/random/random-waifu": {
+            "get": {
+                "summary": "Random-waifu API",
+                "description": "Mengambil data dari random-waifu API.",
+                "tags": [
+                    "Random"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk random-waifu",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/fdroid": {
+            "get": {
+                "summary": "Fdroid API",
+                "description": "Mengambil data dari fdroid API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk fdroid",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/googleimage": {
+            "get": {
+                "summary": "Googleimage API",
+                "description": "Mengambil data dari googleimage API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk googleimage",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/happymod": {
+            "get": {
+                "summary": "Happymod API",
+                "description": "Mengambil data dari happymod API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk happymod",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/lyrics": {
+            "get": {
+                "summary": "Lyrics API",
+                "description": "Mengambil data dari lyrics API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk lyrics",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/npm": {
+            "get": {
+                "summary": "Npm API",
+                "description": "Mengambil data dari npm API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk npm",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/pinterest": {
+            "get": {
+                "summary": "Pinterest API",
+                "description": "Mengambil data dari pinterest API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk pinterest",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/playstore": {
+            "get": {
+                "summary": "Playstore API",
+                "description": "Mengambil data dari playstore API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk playstore",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/search-youtube": {
+            "get": {
+                "summary": "Search-youtube API",
+                "description": "Mengambil data dari search-youtube API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk search-youtube",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/sfile": {
+            "get": {
+                "summary": "Sfile API",
+                "description": "Mengambil data dari sfile API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk sfile",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/search/tiktok-search": {
+            "get": {
+                "summary": "Tiktok-search API",
+                "description": "Mengambil data dari tiktok-search API.",
+                "tags": [
+                    "Search"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk tiktok-search",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/stalk/githubstalk": {
+            "get": {
+                "summary": "Githubstalk API",
+                "description": "Mengambil data dari githubstalk API.",
+                "tags": [
+                    "Stalk"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk githubstalk",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/stalk/igstalk": {
+            "get": {
+                "summary": "Igstalk API",
+                "description": "Mengambil data dari igstalk API.",
+                "tags": [
+                    "Stalk"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk igstalk",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/stalk/npmstalk": {
+            "get": {
+                "summary": "Npmstalk API",
+                "description": "Mengambil data dari npmstalk API.",
+                "tags": [
+                    "Stalk"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk npmstalk",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/stalk/ttstalk": {
+            "get": {
+                "summary": "Ttstalk API",
+                "description": "Mengambil data dari ttstalk API.",
+                "tags": [
+                    "Stalk"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk ttstalk",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/stalk/ytstalk": {
+            "get": {
+                "summary": "Ytstalk API",
+                "description": "Mengambil data dari ytstalk API.",
+                "tags": [
+                    "Stalk"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk ytstalk",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/tools/emojimix": {
+            "get": {
+                "summary": "Emojimix API",
+                "description": "Mengambil data dari emojimix API.",
+                "tags": [
+                    "Tools"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk emojimix",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/tools/emojitogif": {
+            "get": {
+                "summary": "Emojitogif API",
+                "description": "Mengambil data dari emojitogif API.",
+                "tags": [
+                    "Tools"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk emojitogif",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/tools/ocr": {
+            "get": {
+                "summary": "Ocr API",
+                "description": "Mengambil data dari ocr API.",
+                "tags": [
+                    "Tools"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk ocr",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/tools/ssweb": {
+            "get": {
+                "summary": "Ssweb API",
+                "description": "Mengambil data dari ssweb API.",
+                "tags": [
+                    "Tools"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk ssweb",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        },
+        "/tools/tts": {
+            "get": {
+                "summary": "Tts API",
+                "description": "Mengambil data dari tts API.",
+                "tags": [
+                    "Tools"
+                ],
+                "parameters": [
+                    {
+                        "name": "param",
+                        "in": "query",
+                        "required": false,
+                        "description": "Parameter untuk tts",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Berhasil mendapatkan data",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Gagal memproses request"
+                    }
+                }
+            }
+        }
+    }
+}
